@@ -1,0 +1,28 @@
+{
+  "name": "@f0c1s/pkgs",
+  "version": "1.0.0",
+  "main": "",
+  "scripts": {
+    "test": "./node_modules/.bin/jasmine",
+    "build": "./node_modules/.bin/tsc --project tsconfig.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IAmAnubhavSaini/pkgs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/IAmAnubhavSaini/pkgs/issues"
+  },
+  "homepage": "https://github.com/IAmAnubhavSaini/pkgs#readme",
+  "description": "",
+  "devDependencies": {
+    "@types/jasmine": "^5.1.5",
+    "@types/node": "^22.10.7",
+    "jasmine": "^5.5.0",
+    "typescript": "^5.7.3"
+  }
+}
