@@ -6,12 +6,12 @@ function concordance(text: string[], word: string): [Array<string>, Array<number
     const out : Array<string> = [];
     const lineNumbers: Array<number> = [];
     for(let i =0; i < text.length; i++) {
-        const line = text[i].toLocaleLowerCase();
-        if(line.includes(word)) {
-            const index = line.indexOf(word);
+        const line = text[i].toLocaleLowerCase().split(" ");
+        const index = line.indexOf(word);
+        if(index > -1) {
             const start = Math.max(0, index - 5);
             const end = Math.min(line.length, index + 5);
-            out.push(line.substring(start, end));
+            out.push(line.slice(start, end).join(''));
             lineNumbers.push(i);
         }
     }
@@ -25,12 +25,12 @@ function concordanceCaseSensitive(text: string[], word: string): [Array<string>,
     const out : Array<string> = [];
     const lineNumbers: Array<number> = [];
     for(let i =0; i < text.length; i++) {
-        const line = text[i];
-        if(line.includes(word)) {
-            const index = line.indexOf(word);
+        const line = text[i].split(" ");
+        const index = line.indexOf(word);
+        if(index > -1) {
             const start = Math.max(0, index - 5);
             const end = Math.min(line.length, index + 5);
-            out.push(line.substring(start, end));
+            out.push(line.slice(start, end).join(''));
             lineNumbers.push(i);
         }
     }

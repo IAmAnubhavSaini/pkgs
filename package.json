@@ -1,6 +1,6 @@
 {
   "name": "@f0c1s/pkgs",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "main": "",
   "scripts": {
     "test": "./node_modules/.bin/jasmine",
