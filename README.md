@@ -13,7 +13,15 @@
 ## [identity](./src/identity/README.md)
 
 ```javascript
-import { isBuffer, isInteger, isNotNullorEmptyString, isNumber, isObject, isString } from "@f0c1s/pkgs/identity";
+import {
+    isBuffer,
+    isInteger,
+    isNotNullOrEmptyString,
+    isNullOrEmptyString,
+    isNumber,
+    isObject,
+    isString,
+} from "@f0c1s/pkgs/identity";
 ```
 
 ## [iota](./src/iota/README.md)

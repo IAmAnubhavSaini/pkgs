@@ -2,15 +2,19 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.isBuffer = isBuffer;
 exports.isInteger = isInteger;
-exports.isNotNullorEmptyString = isNotNullorEmptyString;
+exports.isNotNullOrEmptyString = isNotNullOrEmptyString;
+exports.isNullOrEmptyString = isNullOrEmptyString;
 exports.isNumber = isNumber;
 exports.isObject = isObject;
 exports.isString = isString;
 function isString(x) {
     return x !== null && typeof x === "string";
 }
-function isNotNullorEmptyString(x) {
-    return x !== null && isString(x) && x.length >= 0;
+function isNullOrEmptyString(x) {
+    return x === null || (typeof x === "string" && x.length === 0);
+}
+function isNotNullOrEmptyString(x) {
+    return x !== null && typeof x === "string" && x.length > 0;
 }
 function isNumber(x) {
     return typeof x === "number";

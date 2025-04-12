@@ -4,7 +4,15 @@ import {
 } from "./concordance/concordance";
 
 import { commonContexts } from "./common-contexts/common-contexts";
-
+import {
+    isBuffer,
+    isInteger,
+    isNotNullOrEmptyString,
+    isNullOrEmptyString,
+    isNumber,
+    isObject,
+    isString,
+} from "./identity/identity";
 import { iota } from "./iota/iota";
 import { range } from "./range/range";
 import { u31b } from "./utils/utils";
@@ -15,6 +23,14 @@ export {
     // concordance
     concordance,
     concordanceCaseSensitive,
+    // identity
+    isBuffer,
+    isInteger,
+    isNotNullOrEmptyString,
+    isNullOrEmptyString,
+    isNumber,
+    isObject,
+    isString,
     // iota
     iota,
     //range

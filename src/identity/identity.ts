@@ -2,8 +2,12 @@ function isString(x: any): x is string {
     return x !== null && typeof x === "string";
 }
 
-function isNotNullorEmptyString(x: any): x is string {
-    return x !== null && isString(x) && x.length >= 0;
+function isNullOrEmptyString(x: any): boolean {
+    return x === null || (typeof x === "string" && x.length === 0);
+}
+
+function isNotNullOrEmptyString(x: any): x is string {
+    return x !== null && typeof x === "string" && x.length > 0;
 }
 
 function isNumber(x: any): x is number {
@@ -35,7 +39,8 @@ function isObject(x: any): x is Record<string, any> {
 export {
     isBuffer,
     isInteger,
-    isNotNullorEmptyString,
+    isNotNullOrEmptyString,
+    isNullOrEmptyString,
     isNumber,
     isObject,
     isString,
