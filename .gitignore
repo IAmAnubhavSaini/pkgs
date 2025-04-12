@@ -1,3 +1,6 @@
+# https://raw.githubusercontent.com/IAmAnubhavSaini/.files/refs/heads/main/.gitignore
+# curl https://raw.githubusercontent.com/IAmAnubhavSaini/.files/refs/heads/main/.gitignore -o .gitignore
+#
 # programming languages supported
 ## python           ✔
 ## rust             ✔
@@ -25,6 +28,8 @@
 ## mine
 ##
 
+.dist/
+.declarations/
 .idea/
 node_modules/
 *.sqlite3
@@ -567,8 +572,9 @@ ServiceFabricBackup/
 *.bim_*.settings
 *.rptproj.rsuser
 *- [Bb]ackup.rdl
-*- [Bb]ackup ([0-9]).rdl
-*- [Bb]ackup ([0-9][0-9]).rdl
+### .gitignore uses shell-style glob patterns, not regular expressions. The parentheses (()) used for grouping in regex are not valid in .gitignore
+*- [Bb]ackup [0-9].rdl
+*- [Bb]ackup [0-9][0-9].rdl
 
 # Microsoft Fakes
 FakesAssemblies/
@@ -1168,7 +1174,7 @@ dist-ssr/
 *.local
 
 ## note taking apps
-.obsidian/*
+.obsidian
 !.obsidian/snippets/
 .logseq/
 

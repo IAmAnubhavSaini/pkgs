@@ -11,7 +11,7 @@ function concordance(text: string[], word: string): [Array<string>, Array<number
         if(index > -1) {
             const start = Math.max(0, index - 5);
             const end = Math.min(line.length, index + 5);
-            out.push(line.slice(start, end).join(''));
+            out.push(line.slice(start, end).join(' '));
             lineNumbers.push(i);
         }
     }
@@ -30,7 +30,7 @@ function concordanceCaseSensitive(text: string[], word: string): [Array<string>,
         if(index > -1) {
             const start = Math.max(0, index - 5);
             const end = Math.min(line.length, index + 5);
-            out.push(line.slice(start, end).join(''));
+            out.push(line.slice(start, end).join(' '));
             lineNumbers.push(i);
         }
     }

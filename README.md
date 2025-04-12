@@ -2,23 +2,23 @@
 
 `npm install @f0c1s/pkgs`
 
-## concordance
+## [concordance](./src/concordance/README.md)
 
 `import {concordance, concordanceCaseSensitive} from "@f0c1s/pkgs/corcordance"`
 
-## common-contexts
+## [common-contexts](./src/common-contexts/README.md)
 
 `import {commonContexts} from "@f0c1s/pkgs/common-contexts"`
 
-## iota
+## [iota](./src/iota/README.md)
 
 `import {iota} from "@f0c1s/pkgs/iota"`
 
-## range
+## [range](./src/range/README.md)
 
 `import {range} from "@f0c1s/pkgs/range"`
 
-## utils
+## [utils](./src/utils/README.md)
 
 `import {u31b} from "@f0c1s/pkgs/utils"`
 

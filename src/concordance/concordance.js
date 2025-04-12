@@ -15,7 +15,7 @@ function concordance(text, word) {
         if (index > -1) {
             const start = Math.max(0, index - 5);
             const end = Math.min(line.length, index + 5);
-            out.push(line.slice(start, end).join(''));
+            out.push(line.slice(start, end).join(' '));
             lineNumbers.push(i);
         }
     }
@@ -33,7 +33,7 @@ function concordanceCaseSensitive(text, word) {
         if (index > -1) {
             const start = Math.max(0, index - 5);
             const end = Math.min(line.length, index + 5);
-            out.push(line.slice(start, end).join(''));
+            out.push(line.slice(start, end).join(' '));
             lineNumbers.push(i);
         }
     }

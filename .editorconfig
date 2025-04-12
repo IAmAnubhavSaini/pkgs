@@ -1,4 +1,5 @@
-# https://raw.githubusercontent.com/IAmAnubhavSaini/.files/main/.editorconfig
+# https://raw.githubusercontent.com/IAmAnubhavSaini/.files/refs/heads/main/.editorconfig
+# curl https://raw.githubusercontent.com/IAmAnubhavSaini/.files/refs/heads/main/.editorconfig -o .editorconfig
 
 root = true
 
@@ -18,5 +19,11 @@ trim_trailing_whitespace = false
 indent_style = space
 indent_size = 2
 
+[*.json]
+insert_final_newline = false
+
 [Makefile]
+indent_style = tab
+
+[*.go]
 indent_style = tab
