@@ -36,6 +36,9 @@
       "@f0c1s/pkgs/commonContexts": [
         "./src/common-contexts/common-contexts"
       ],
+      "@f0c1s/pkgs/identity": [
+        "./src/identity/identity.ts"
+      ],
       "@f0c1s/pkgs/iota": [
         "./src/iota/iota.ts"
       ],
