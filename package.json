@@ -1,7 +1,7 @@
 {
   "name": "@f0c1s/pkgs",
-  "version": "1.1.0",
-  "main": "",
+  "version": "1.2.0",
+  "main": "./src/index",
   "scripts": {
     "test": "./node_modules/.bin/jasmine",
     "build": "./node_modules/.bin/tsc --project tsconfig.json"
@@ -24,5 +24,13 @@
     "@types/node": "^22.10.7",
     "jasmine": "^5.5.0",
     "typescript": "^5.7.3"
+  },
+  "exports": {
+    ".": "./src/index",
+    "./concordance": "./src/concordance/concordance",
+    "./common-contexts": "./src/common-contexts/common-contexts",
+    "./iota": "./src/iota/iota",
+    "./range": "./src/range/range",
+    "./utils": "./src/utils/utils"
   }
 }
