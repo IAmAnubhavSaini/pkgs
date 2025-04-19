@@ -4,6 +4,7 @@ import {
 } from "./concordance/concordance";
 
 import { commonContexts } from "./common-contexts/common-contexts";
+import { dcnpf } from "./dcnpf/dcnpf";
 import {
     isBuffer,
     isInteger,
@@ -23,6 +24,8 @@ export {
     // concordance
     concordance,
     concordanceCaseSensitive,
+    // deepCloneNullProtoFrozen
+    dcnpf,
     // identity
     isBuffer,
     isInteger,

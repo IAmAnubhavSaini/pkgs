@@ -10,6 +10,11 @@
 
 `import {commonContexts} from "@f0c1s/pkgs/common-contexts"`
 
+## [dcnpf deepCloneNullProtoFrozen](./src/dcnpf/README.md)
+
+`import {dcnpf} from "@f0c1s/pkgs/dcnpf"`
+
+
 ## [identity](./src/identity/README.md)
 
 ```javascript

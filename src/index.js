@@ -1,11 +1,13 @@
 ﻿"use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.u31b = exports.range = exports.iota = exports.isString = exports.isObject = exports.isNumber = exports.isNullOrEmptyString = exports.isNotNullOrEmptyString = exports.isInteger = exports.isBuffer = exports.concordanceCaseSensitive = exports.concordance = exports.commonContexts = void 0;
+exports.u31b = exports.range = exports.iota = exports.isString = exports.isObject = exports.isNumber = exports.isNullOrEmptyString = exports.isNotNullOrEmptyString = exports.isInteger = exports.isBuffer = exports.dcnpf = exports.concordanceCaseSensitive = exports.concordance = exports.commonContexts = void 0;
 const concordance_1 = require("./concordance/concordance");
 Object.defineProperty(exports, "concordance", { enumerable: true, get: function () { return concordance_1.concordance; } });
 Object.defineProperty(exports, "concordanceCaseSensitive", { enumerable: true, get: function () { return concordance_1.concordanceCaseSensitive; } });
 const common_contexts_1 = require("./common-contexts/common-contexts");
 Object.defineProperty(exports, "commonContexts", { enumerable: true, get: function () { return common_contexts_1.commonContexts; } });
+const dcnpf_1 = require("./dcnpf/dcnpf");
+Object.defineProperty(exports, "dcnpf", { enumerable: true, get: function () { return dcnpf_1.dcnpf; } });
 const identity_1 = require("./identity/identity");
 Object.defineProperty(exports, "isBuffer", { enumerable: true, get: function () { return identity_1.isBuffer; } });
 Object.defineProperty(exports, "isInteger", { enumerable: true, get: function () { return identity_1.isInteger; } });

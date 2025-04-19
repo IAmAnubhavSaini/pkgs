@@ -1,6 +1,6 @@
 {
   "name": "@f0c1s/pkgs",
-  "version": "1.6.0",
+  "version": "1.7.0",
   "main": "./src/index",
   "scripts": {
     "test": "./node_modules/.bin/jasmine",
@@ -32,6 +32,7 @@
     "./identity": "./src/identity/identity.js",
     "./iota": "./src/iota/iota.js",
     "./range": "./src/range/range.js",
-    "./utils": "./src/utils/utils.js"
+    "./utils": "./src/utils/utils.js",
+    "./dcnpf": "./src/dcnpf/dcnpf.js"
   }
 }
